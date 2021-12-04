@@ -13,10 +13,13 @@ from opentelemetry.instrumentation.flask import FlaskInstrumentor
 from opentelemetry.instrumentation.requests import RequestsInstrumentor
 from prometheus_flask_exporter import PrometheusMetrics
 
+from os import getenv
+
+JAEGER_HOST = getenv('JAEGER_HOST', 'localhost')
+
 app = Flask(__name__)
 FlaskInstrumentor().instrument_app(app)
 RequestsInstrumentor().instrument()
-
 metrics = PrometheusMetrics(app)
 # static information as metric
 metrics.info("app_info", "Application info", version="1.0.3")
@@ -32,7 +35,9 @@ def init_tracer(service):
             "sampler": {"type": "const", "param": 1},
             "logging": True,
             "reporter_batch_size": 1,
-        },
+            'local_agent':
+            # Also, provide a hostname of Jaeger instance to send traces to.
+            {'reporting_host': JAEGER_HOST}},
         service_name=service,
         validate=True,
         metrics_factory=PrometheusMetricsFactory(service_name_label=service),
