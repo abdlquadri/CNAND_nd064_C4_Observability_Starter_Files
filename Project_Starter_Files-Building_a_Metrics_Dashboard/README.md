@@ -37,7 +37,7 @@
 - Success rates: This should measure API success rates.
 
 ## Create a Dashboard to measure our SLIs
-![basic dashboard](https://github.com/abdlquadri/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/basic-dashboard.png)
+![basic dashboard](https://github.com/abdlquadri/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/grafana-sli.png)
 
 ## Tracing our Flask App
 ![tracing in app](https://github.com/abdlquadri/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/jaeger-span-app-py.png)
