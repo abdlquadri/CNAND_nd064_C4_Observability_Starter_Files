@@ -83,6 +83,17 @@ Description: There are noticeable 404 Errors resulting from user action.
 
  2. Decrease in infrastructue spending.
   - Rationale: If the CPU per server is well saturated, overalll cost on server spending will go down since redundant servers can be decomissioned.
+4. Number of Pods  
+  - Rationale: Number of pods running cluster is an indication of how well infrasture is being used.
+5. CPU Spkies
+  - Rationale: CPU activity is an indication of how well the applcations are behaving.
+6. Decrease in customer complaints
+  - Rationale: A reduction in number of new tikets shows how satisfied customers are about the service
+
+7. Error rates
+ - Rationale: A reduction in 40x and 50x errror rates shows how usable the service is.
+8. Resonale Span Duration
+ - Rationale: A reasonable span duration indicates how responsive the service is.
 
 ## Final Dashboard
 ![final dashboard](https://github.com/abdlquadri/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/kpi-dashboard.png)
