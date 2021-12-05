@@ -48,6 +48,8 @@
 ## Report Error
 ![jaeger dashboard](https://github.com/abdlquadri/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/jaeger-span-dashboard.png)
 
+![jaeger dashboard](https://github.com/abdlquadri/CNAND_nd064_C4_Observability_Starter_Files/blob/master/Project_Starter_Files-Building_a_Metrics_Dashboard/answer-img/jaeger-span-log.png)
+
 TROUBLE TICKET
 
 Name: Abdulquadri Mumuney
@@ -60,7 +62,7 @@ Affected Area:
 
 Severity: High
 
-Description: There are noticeable 404 Errors resulting from user action.
+Description: There are noticeable 404 and Errors resulting from user action.
 
 
 ## Creating SLIs and SLOs
